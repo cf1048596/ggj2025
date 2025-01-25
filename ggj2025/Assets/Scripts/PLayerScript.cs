@@ -7,8 +7,9 @@ using UnityEngine.InputSystem.Controls;
 public class PlayerScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private float moveSpeed = 8f;
+    public float moveSpeed = 8f;
     private float drag = 2f;
+    private float health = 100f;
     public float buoyancy = 2f;
 
     private Rigidbody2D rb;
