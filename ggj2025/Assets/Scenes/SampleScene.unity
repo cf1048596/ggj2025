@@ -1095,10 +1095,11 @@ MonoBehaviour:
   - {fileID: 1686149328}
   - {fileID: 424008377}
   rooms:
-  - {fileID: 989200564704396112, guid: e9478f16ea09b954fb2787008c518d08, type: 3}
+  - {fileID: 7793836869840927219, guid: dbdd65e243ab48b47afc41717ddbc9cf, type: 3}
   - {fileID: 989200564704396112, guid: 2cf6ccd519319fd4cb0354cbecc78aee, type: 3}
   - {fileID: 989200564704396112, guid: a7f889356deacab488dcac5b9b6804cd, type: 3}
-  - {fileID: 989200564704396112, guid: dc9ca6622be95c54386ceae17d60306b, type: 3}
+  - {fileID: 989200564704396112, guid: dcd4117eec4d23644a59a81ea0f98deb, type: 3}
+  - {fileID: 1407174093472200331, guid: 2c53868956e185b49a7a188581e8b1ca, type: 3}
   moveAmount: 10
   stopGeneration: 0
   room:
