@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.Hierarchy;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem.Controls;
 
 public class PlayerScript : MonoBehaviour
@@ -9,8 +10,8 @@ public class PlayerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float moveSpeed = 8f;
     private float drag = 2f;
-    private float health = 100f;
     public float buoyancy = 2f;
+    private float hp = 50f;
 
     private Rigidbody2D rb;
     private Vector2 velocity;
@@ -82,6 +83,9 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        velocity = Vector2.Reflect(velocity, collision.contacts[0].normal) * 0.5f;
+        if (collision.collider.CompareTag("enemyfish"))
+        {
+            hp -= 10;
+        }
     }
 }
