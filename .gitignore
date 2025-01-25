@@ -30,3 +30,5 @@ UserSettings/
 *.Thumbs.db
 *gameBuild*
 *linuxBuild*
+/ggj2025/Assembly-CSharp.csproj
+/ggj2025/AstarPathfindingProject.csproj

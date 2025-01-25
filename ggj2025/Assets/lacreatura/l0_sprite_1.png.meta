@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5a3a314d18e23f847bee603faa6c3c28
+guid: 0e9b2c6e31e5bca40b3d1b5625161095
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8437618815204556447
-    second: double_tap_0
+      213: -5444745853883899374
+    second: l0_sprite_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: double_tap_0
+      name: l0_sprite_1_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 24
-        width: 18
-        height: 18
+        x: 1
+        y: 12
+        width: 31
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9e7b66ab91781570800000000000000
-      internalID: 8437618815204556447
+      spriteID: 21228fe4e706074b0800000000000000
+      internalID: -5444745853883899374
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      double_tap_0: 8437618815204556447
+      l0_sprite_1_0: -5444745853883899374
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
