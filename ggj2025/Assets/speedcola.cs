@@ -19,11 +19,7 @@ public class speedcola : MonoBehaviour
         {
             PlayerScript playerScript = collision.gameObject.GetComponent<PlayerScript>();
             playerScript.moveSpeed = 16f;                               
-
             Destroy(gameObject);
         }
-
-        
-
     }
 }

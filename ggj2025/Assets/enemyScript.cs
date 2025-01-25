@@ -7,6 +7,7 @@ public class enemyScript : MonoBehaviour
     public Transform player;
     public float detectionRange = 10f;
     public float moveSpeed = 2f;
+    private float hp = 100f;
 
     void Start()
     {
@@ -31,12 +32,12 @@ public class enemyScript : MonoBehaviour
     {
         if (collider.CompareTag("bullet"))
         {
+            hp -= 10f;
+            if (hp <= 0)
+            {
+                Destroy(gameObject);
+            }
             Destroy(collider.gameObject);
-            Destroy(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 }
