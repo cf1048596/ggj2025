@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        // get the player's collider
+        //get the player's collider
         Collider2D playerCollider = GetComponent<Collider2D>();
 
 
@@ -24,6 +24,20 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //disable gravity
         rb.gravityScale = 0f;
+
+        GameObject[] ignoreObjects = GameObject.FindGameObjectsWithTag("ignorePlayCol");
+
+        //loop through each object and disable its collisions with this object
+        foreach (var obj in ignoreObjects)
+        {
+            Collider2D otherCollider = obj.GetComponent<Collider2D>();
+
+            if (otherCollider != null)
+            {
+                //ignore the collision between this object's collider and the other object's collider
+                Physics2D.IgnoreCollision(GetComponent<Collider2D>(), otherCollider, true);
+            }
+        }
     }
 
     void Update()
