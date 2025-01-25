@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnRooms : MonoBehaviour
@@ -14,11 +15,14 @@ public class SpawnRooms : MonoBehaviour
     void Update()
     {
         Collider2D roomDetection = Physics2D.OverlapCircle(transform.position, 1, whatisRoom);
-        if (roomDetection == null && levelGen.stopGeneration == true)
+        if (roomDetection == null) 
         {
             int rand = Random.Range(0, levelGen.rooms.Length);
             Instantiate(levelGen.rooms[rand], transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            if (levelGen.stopGeneration)
+            {
+                Object.Destroy(gameObject);
+            }
         }
     }
 }

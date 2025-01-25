@@ -1,20 +1,12 @@
-using JetBrains.Annotations;
 using UnityEngine;
 
-public class RoomType : MonoBehaviour
+public class ignoreCollisionsPlayer : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public int type;
     void Start()
     {
-
-        
-    }
-
-    public void RoomDestruction()
-    {
-        Destroy (gameObject);
-
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
 
     // Update is called once per frame

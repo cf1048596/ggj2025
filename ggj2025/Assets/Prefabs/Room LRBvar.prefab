@@ -162,9 +162,10 @@ GameObject:
   - component: {fileID: 1395887486750905912}
   - component: {fileID: 3122924588784508433}
   - component: {fileID: 8962868654844189359}
+  - component: {fileID: -9121597418573623044}
   m_Layer: 6
   m_Name: Room LRBvar
-  m_TagString: Untagged
+  m_TagString: ignorePlayCol
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -276,6 +277,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-9121597418573623044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407174093472200331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1694d5b86e38727469d0cb5e56eddff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1499494983215328655
 GameObject:
   m_ObjectHideFlags: 0
