@@ -4,6 +4,9 @@ using Unity.Hierarchy;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.SceneManagement; // Make sure to include this for scene management
+
+
 
 public class PlayerScript : MonoBehaviour
 {
@@ -46,6 +49,10 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        if (hp<=10)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
         textBox.text = "HP: " + hp;
         float rotationSpeed = 5f;
         float horizontal = Input.GetAxis("Horizontal");
