@@ -11,10 +11,12 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed = 8f;
     private float drag = 2f;
     public float buoyancy = 2f;
-    private float hp = 50f;
+    public float hp = 50f;
 
     private Rigidbody2D rb;
     private Vector2 velocity;
+
+    public TextMeshProUGUI textBox;
 
     void Start()
     {
@@ -44,6 +46,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        textBox.text = "HP: " + hp;
         float rotationSpeed = 5f;
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");

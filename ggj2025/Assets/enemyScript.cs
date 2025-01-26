@@ -39,5 +39,14 @@ public class enemyScript : MonoBehaviour
             }
             Destroy(collider.gameObject);
         }
+        if (collider.CompareTag("Player"))
+        {
+            PlayerScript playerScript = collider.gameObject.GetComponent<PlayerScript>();
+            if (playerScript != null)
+            {
+                playerScript.hp -= 10; // Decrease HP by 10 (or whatever amount you want)
+            }
+        }
+
     }
 }
