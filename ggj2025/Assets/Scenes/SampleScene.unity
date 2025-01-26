@@ -4522,6 +4522,7 @@ MonoBehaviour:
   bulletSpeed: 20
   bulletLightColor: {r: 1, g: 1, b: 1, a: 1}
   lightIntensity: 5
+  playerObject: {fileID: 957378885}
 --- !u!4 &744949349
 Transform:
   m_ObjectHideFlags: 0
@@ -13712,6 +13713,63 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &8417331106351892356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 911994771909355295, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117954227494074155, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
+      propertyPath: m_Name
+      value: doubletap_bubble
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b20077c1cd4bcb2449e677b32b40192a, type: 3}
 --- !u!61 &8530689786481171274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14031,3 +14089,4 @@ SceneRoots:
   - {fileID: 316981631}
   - {fileID: 620216759}
   - {fileID: 888990641}
+  - {fileID: 8417331106351892356}

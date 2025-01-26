@@ -20,10 +20,12 @@ public class PlayerScript : MonoBehaviour
     private Vector2 velocity;
 
     public TextMeshProUGUI textBox;
+    private bool doubletap;
 
     void Start()
     {
         //get the player's collider
+        doubletap = false;
         Collider2D playerCollider = GetComponent<Collider2D>();
 
 
@@ -98,4 +100,11 @@ public class PlayerScript : MonoBehaviour
             hp -= 10;
         }
     }
+
+    public bool doubletapvar
+    {
+        get { return doubletap; }
+        set { doubletap = value; }
+    }
+
 }
